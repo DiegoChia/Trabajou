@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GYM</title>
+    <link rel="stylesheet" href="stylebread.css">
+</head>
+<body>
+    <h1>Registro De GYM </h1>
+ 
+    <!-- Encabezado con menú -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#contactanos">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+ 
+    <!-- Sección inicio -->
+    <section id="inicio">
+        <h2>Sobre nosotros</h2>
+        <p>Nuestro sitio web se dedica a ofrecer productos de gimnasio,como proteinas,maquinas,ayudarte con tu cambio fisico.</p>
+    </section>
+ 
+    <!-- Formulario de registro -->
+    <section id="registro">
+        <h2>Formulario de Registro</h2>
+        <form action="/procesar-registro" method="post">
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="ejemplo@correo.com" required>
+ 
+            <label for="password">Contraseña:</label>
+            <input type="password" name="password" id="password" required>
+ 
+            <p>¿Qué productos te interesan?</p>
+            <input type="checkbox" id="Proteinas" name="productos[]" value="Proteinas">
+            <label for="Proteinas">Proteinas</label><br>
+ 
+            <input type="checkbox" id="Acersoramiento" name="productos[]" value="Acersoramiento">
+            <label for="Acersoramiento">Acersoramiento /label><br>
+ 
+            <input type="checkbox" id="Maquinas de GYM" name="productos[]" value="Maquinas de GYM">
+            <label for="Maquinas de GYM"></label>Maquinas de GYM</label><br>
+ 
+            <br>
+            <button type="submit">Registrarse</button>
+        </form>
+    </section>
+ 
+    <!-- Tarjetas de productos -->
+    <article class="product-card">
+        <img src="https://i.ytimg.com/vi/n5NSGPPyISw/maxresdefault.jpg" alt="Proteinas" width="300">
+        <div class="product-info">
+            <h2>Proteinas </h2>
+            <p class="price">$45.000</p>
+            <button class="buy-button">Agregar al carrito</button>
+        </div>
+    </article>
+ 
+    <article class="product-card">
+        <img src="https://th.bing.com/th/id/R.18ef31c74dc5b8e02e9d5bd21d872bb7?rik=%2bgl5fZSe8taXUA&riu=http%3a%2f%2fimages.neventum.com%2f2011%2f73%2fcts-200ex_cd24ade5.jpg&ehk=QRHXBZUdYbuG2f5qt6MG0eBTtat1D79Ge4dfdnoAv1s%3d&risl=&pid=ImgRaw&r=0" alt="Maquinas de GYM" width="300">
+        <div class="product-info">
+            <h2>Maquinas de GYM</h2>
+            <p class="price">$500.000</p>
+            <button class="buy-button">Agregar al carrito</button>
+        </div>
+    </article>
+</body>
+</html>
